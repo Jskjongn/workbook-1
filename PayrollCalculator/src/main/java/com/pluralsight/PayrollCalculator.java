@@ -28,8 +28,18 @@ public class PayrollCalculator {
         float grossPay = hours * payRate;
 
         // displays the user's name and their gross pay
-        System.out.println(name + " your gross pay is: " + grossPay);
+        // System.out.println(name + " your gross pay is: " + grossPay);
+
+        // calculating overtime pay
+        // overtime is hours over 40 times 1.5
+        if (hours > 40) {
+            System.out.println(name + " your gross pay with overtime is: " + grossPay * 1.5f);
+        } else {
+            System.out.println(name + " your gross pay is: " + grossPay);
+        }
 
     }
+
+
 
 }
